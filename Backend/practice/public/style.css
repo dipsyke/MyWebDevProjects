@@ -1,0 +1,47 @@
+.container {
+    border: solid black;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: lavender;
+    font-family: 'Arvo', cursive;
+}
+
+.btn {
+    padding: 20px 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid black 2px;
+    background-color: #E72F24;
+    color: white;
+    font-size: 15pt;
+    letter-spacing: 2pt;
+    font-family: 'Arvo', cursive;
+}
+body{
+    background-color: rebeccapurple;
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+    body {
+        background-color: lightsalmon;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    body {
+        background-color: powderblue;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+    body {
+        background-color: limegreen;
+    }
+}
+
+@media (min-width: 1601px) {
+    .container
+}
