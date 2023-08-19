@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ("partials/head.ejs") %>
+
+<body>
+<main>
+
+
+    <div class="container">
+        <%- include ("partials/header.ejs") %>
+        <div class="title">
+            <h1>Welcome to "Do Do" the free to do app!</h1>
+            <h2>Get Productive Today!</h2>
+
+
+            <div class="buttons">
+                <form class="button" action="/work" method="GET">
+                    <input type="submit" value="Create To Do List for Work">
+                </form>
+
+                <form class="button" action="/today" method="GET">
+                    <input type="submit" value="Create today's to do list">
+                </form>
+            </div>
+        </div>
+        <%- include ("partials/footer.ejs") %>
+    </div>
+
+
+</main>
+</body>
+
+</html>
+
+

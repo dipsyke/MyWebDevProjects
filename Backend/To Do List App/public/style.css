@@ -1,0 +1,84 @@
+#wallpaper {
+    color: white;
+    font-size: x-large;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin: 50px;
+    background-color: rgba(19, 50, 45, 0.85);
+    min-height: 90vh;
+    font-family: roboto, sans-serif;
+}
+
+.title{
+    color: #FFF4F4;
+    margin: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.button {
+    margin: 10px;
+}
+
+input {
+    background-color: #F7E6C4;
+    padding: 20px;
+    font-family: roboto, sans-serif;
+    font-size: 12pt;
+    border: none;
+    border-radius: 20px;
+}
+
+body {
+    background-image: url("images/succ.jpg");
+    /*background-color: darkseagreen;*/
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#work{
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: underline;
+    border-right: 2px solid white;
+}
+
+#today{
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: underline;
+}
+
+.list{
+    background-color: #F7E6C4;
+    padding: 20px;
+    font-family: roboto, sans-serif;
+    font-size: 12pt;
+    border: none;
+    border-radius: 20px;
+}
+
+.footer{
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 3vh;
+}
