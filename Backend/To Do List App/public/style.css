@@ -18,6 +18,10 @@
     font-family: roboto, sans-serif;
 }
 
+.checkedItem{
+text-decoration: line-through;
+}
+
 .title{
     color: #FFF4F4;
     margin: 20px;
@@ -35,7 +39,7 @@
     margin: 10px;
 }
 
-input {
+input{
     background-color: #F7E6C4;
     padding: 20px;
     font-family: roboto, sans-serif;
@@ -44,6 +48,31 @@ input {
     border-radius: 20px;
 }
 
+.to-dos{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item {
+    /*background-color: #F7E6C4;*/
+    /*padding: 5px;*/
+    font-family: roboto, sans-serif;
+    font-size: 12pt;
+    border: none;
+    color: white;
+    /*border-radius: 10px;*/
+    margin: 5px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+align-items: flex-start;
+}
+.checkbox {
+margin-right: 50px;
+}
 body {
     background-image: url("images/succ.jpg");
     /*background-color: darkseagreen;*/
@@ -65,20 +94,13 @@ a{
     text-decoration: underline;
 }
 
-.list{
-    background-color: #F7E6C4;
-    padding: 20px;
-    font-family: roboto, sans-serif;
-    font-size: 12pt;
-    border: none;
-    border-radius: 20px;
-}
 
-.footer{
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     color: white;
-    display: flex;
     text-align: center;
-    align-items: flex-end;
-    position: absolute;
-    bottom: 3vh;
 }
