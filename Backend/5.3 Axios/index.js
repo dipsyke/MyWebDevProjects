@@ -28,9 +28,16 @@ app.post("/", async (req, res) => {
     let chosenType = req.body.type
     let chosenParticipants = req.body.participants
     const upstreamResponse = await axios.get(`https://bored-api.appbrewery.com/filter?type=${chosenType}&participants=${chosenParticipants}`);
+
+    // const csikiResponse = await axios.request({
+    //   method: "GET",
+    //   url: '/csiki',
+    //   data: 69420 // upstream request body
+    // });
+
     console.log('response HERE:', upstreamResponse.data)
     const result = upstreamResponse.data;
-    let randomChosenActivity = result[Math.floor(Math.random() * result.length)+1];
+    let randomChosenActivity = result[Math.floor(Math.random() * result.length)];
 
     res.render("index.ejs", { activityToDisplay: randomChosenActivity });
   } catch (error) {
