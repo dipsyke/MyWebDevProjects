@@ -1,0 +1,60 @@
+.wallpaper {
+    background-color: #5C469C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: roboto, sans-serif;
+}
+
+body {
+    background-image: url("images/background_pattern.png");
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.contentArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    margin: 50px;
+    background-color: #5C469C;
+    min-height: 70vh;
+    font-family: roboto, sans-serif;
+    color: white;
+}
+
+#myForm {
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#get {
+    margin: 20px;
+    color: #4e00c2;
+    font-family: roboto, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+img {
+    height: 300px;
+}
+
+#nameInput {
+    color: #4e00c2;
+    margin-left: 20px;
+}

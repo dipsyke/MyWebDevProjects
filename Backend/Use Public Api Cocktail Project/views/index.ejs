@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cocktail Generator</title>
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div class=container>
+    <div class=wallpaper>
+        <h1>
+            <a href="/">Hello Daydrinker!</a>
+        </h1>
+    </div>
+    <div class="contentArea">
+        <% if(drinkToDisplay){ %>
+       <h2>Your Drink: <%= drinkToDisplay.name %></h2>
+        <h3>Category: <%= drinkToDisplay.category %></h3>
+        <p>Alcohol Level: <%= drinkToDisplay.alcoholLevel %></p>
+        <img src="<%= drinkToDisplay.thumbnail %>">
+        <% } %>
+            <form id="myForm" method="post">
+                <label class = "form" for="nameInput">Your Name:</label>
+                <input  type="text" id="nameInput" name="name">
+
+                <input id="get" type="submit" value="Get Your Drink" formaction="/get-cocktail" style="cursor:pointer">
+            </form>
+    </div>
+</div>
+
+</body>
